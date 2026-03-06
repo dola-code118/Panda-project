@@ -17,16 +17,43 @@
     justify-content: space-between;
     padding: 20px 0;
 }
-
-
-
-h1 {
-    background-color: blue;
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #feeae9;
+    border-radius: 20px;
+}
+.left-banner-section{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 55%;
+}
+.left-banner-section p{
+    color: gray;
+}
+.price{
+    color: deeppink;
+}
+.banner-btn{
+    width: 150px;
+    padding: 10px 40px;
+    background-image: linear-gradient(to top,deeppink,pink);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+.right-banner-section{
+    width: 40%;
+    padding: 50px;
+    padding-right: 0;
+}    
+.hero-tv{
+    width: 100%;
+}
     
-} 
-@media screen and (max-width: 576px;){
-    .main-container{
-        max-width: 400px;}
     
 }
     
