@@ -45,10 +45,11 @@
 .banner-btn{
     width: 150px;
     padding: 10px 40px;
-    background-image: linear-gradient(to top,deeppink,pink);
+    background-image: linear-gradient(to top,#ff1b74,#ff8ab7);
     border: none;
     border-radius: 5px;
     color: #fff;
+    cursor: pointer;
 }
 .right-banner-section{
     width: 40%;
@@ -58,10 +59,10 @@
 .hero-tv{
     width: 100%;
 }
-.catagories-section{
+.catagories-section,.shoes-section{
     width: 100%;
 }
-.catagorie-heading{
+.catagorie-heading,.shoes-heading,.backpack-heading{
     margin: 30px 0;
 }
 .cards{
@@ -73,19 +74,108 @@
 .card{
     display: flex;
     align-items: center;
-    background-color: #ff9c35;
     border-radius: 10px;
     justify-content: space-between;
     padding: 10px 20px;
     width: 33%;
-    color: #fff;
+}
+.watch{
+        background-image: linear-gradient(to top,#ff9c35,#fec78c);
+
 }
 .bag{
-    background-color: #ff1b74;
+    background-image: linear-gradient(to top,#ff1b74,#ff8ab7)
+
 }
 .shoes{
-    background-color: #3f07f8;
-}
+    background-image: linear-gradient(to top,#3f07f8,#8c69ff);
 
-    
+}
+.shoes-card{
+    flex-direction: column;
+    border: 1px solid gray;
+    gap: 20px;
+}
+.shoes-button{
+    background-color: #000;
+    color: #fff;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        border-radius: 05px;
+        width: 150px;
+        cursor: pointer;
+}
+.shoes-card,.backpack-card p{
+    text-align: center;
+}
+.backpack-card{
+    flex-direction: column;
+    border: 1px solid gray;
+    gap: 20px;
+}
+.backpack-button{
+       background-color: #000;
+    color: #fff;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        border-radius: 05px;
+        width: 150px;
+        cursor: pointer; 
+}
+.newsletter-container{
+    margin: 100px 0;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 150px;
+    }
+.newsletter-container p{
+    margin: 5px 0;
+    color: gray;
+}
+.newsletter-container form{
+    display: flex;
+    width: 70%;
+}
+#email{
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 100%;
+}
+.btn-send{
+    width: 70px;
+    border: none;
+        background-image: linear-gradient(to top,#ff1b74,#ff8ab7);
+        color: #fff;
+border-radius: 0 5px 5px 0;
+}
+@media screen and (
+    max-width: 576px) { 
+    .main-container{
+        max-width: 400px;
+    }    
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .left-banner-section{
+        width: 100%;
+    }
+    .right-banner-section{
+                width: 100%;
+padding: 10px;
+    }
+      .cards{
+          flex-direction: column;
+      }  
+      .card{
+          width: 100%;
+      }
+      .newsletter-container{
+          padding: 50px 0;
+          flex-direction: column;
+      }
+        }
+
 
